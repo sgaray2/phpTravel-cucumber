@@ -21,21 +21,21 @@ Java.
 #### *Type of Framework:
 I implemented BDD framework using Cucumber. 
 Inside src/test/java I have 3 packages: features, cucumberOptions and stepDefinitions.
-* Features: to store the features file, basically the scenarios to test in a natural language. Inside this feature file I provide through a table the data I want to use in my test case.
+* Features: to store the feature fileS, basically the scenarios to test in a natural language. Inside this feature file I provide through a table the data I want to use in my test case.
 * CucumberOptions: where I have the testRunner for that particular feature.
 * StepDefinitions: where I have defined the methods for every step in the feature file. 
 
 -I also implemented the page object model design pattern, as per Page Object Model, I have maintained a separate class for every webpage. Each webpage has a separate class and these class holds all the elements locators and methods with the actions on this elements.
 
 #### *Maven:
-Using Maven for build, execution, and dependency purpose. I defined a standardized maven project, with to folders: all the tests are kept under src/test/java and all the other remaining files are kept under src/main/java (Base class, element locators (POM classes)).
+Using Maven for build, execution, and dependency purpose. I defined a standardized maven project: all the tests are kept under src/test/java and all the other remaining files that gives support to my test cases are kept under src/main/java (Base class, element locators).
 
-src/main/java 
+src/main/java packages 
 * Test Base Class: to initialize the driver, browser configurations. 
 * PageObjects: elements locators, one class for every page.
 
-src/test/java: 
-Packages: features, cucumberOptions and stepDefinitions.
+src/test/java packages: 
+* features, cucumberOptions and stepDefinitions.
 
 #### *Testing Framework:
 Using TestNG for Assertions, Grouping, and Parallel execution.
